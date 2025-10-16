@@ -1,0 +1,152 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        /* Navbar */
+        .navbar {
+            background-color: #141414;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ffcc00;
+            position:absolute;
+            left:80px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 17px;
+            font-size: 16px;
+        }
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url("https://t3.ftcdn.net/jpg/02/09/52/26/360_F_209522668_IWRapuvKgoCF2iIw6UqK54mVNYbAFGfN.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 400px;
+            color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 12px 25px;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* Movie Section */
+        .movies {
+            padding: 40px;
+            text-align: center;
+        }
+        .movies h2 {
+            margin-bottom: 30px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .movie-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+            background-color: #ffcc00;
+        }
+        .movie-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .movie-card h3 {
+            margin: 15px 0;
+        }
+        .movie-card button {
+            background-color: #141414;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #141414;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        .footer a{
+            text-decoration: none;
+            color:white;
+            
+        }
+        .footer-section{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap:17px;
+            font-size: small;
+            align-items: center;
+            
+        }
+        /* Responsive Design */
+        @media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
