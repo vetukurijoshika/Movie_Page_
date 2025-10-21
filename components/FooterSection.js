@@ -1,6 +1,6 @@
 const FooterSection = () =>{
     return(
-        <div class="footer-section">
+        <div className="footer-section">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
             <a href="#">Terms of Use</a>
